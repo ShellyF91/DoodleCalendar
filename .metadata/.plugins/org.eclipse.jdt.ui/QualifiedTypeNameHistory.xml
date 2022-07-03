@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Around"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.daos.CategoryDao"/>
     <fullyQualifiedTypeName name="com.project.doodlecalendar.daos.DaoException"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.config.ServerKeys"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.entities.webpush.Subscription"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.entities.webpush.SubscriptionEndpoint"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.entities.Notification"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.entities.webpush.PushMessage"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.entities.Category"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.entities.Supplier"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.entities.Product"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.services.CryptoService"/>
+    <fullyQualifiedTypeName name="com.project.doodlecalendar.config.Application"/>
 </qualifiedTypeNameHistroy>
