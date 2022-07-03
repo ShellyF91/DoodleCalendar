@@ -1,0 +1,5 @@
+package com.project.doodlecalendar.entities.webpush;
+
+public class SubscriptionEndpoint {
+
+}

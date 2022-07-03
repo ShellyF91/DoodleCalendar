@@ -1,0 +1,5 @@
+package com.project.doodlecalendar.daos;
+
+public class ProductDao {
+
+}
