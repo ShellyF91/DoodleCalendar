@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ajbc.doodle.calendar.entities.Product;
 import ajbc.doodle.calendar.entities.User;
 
 @Transactional(rollbackFor = {DaoException.class}, readOnly = true)
@@ -22,7 +21,7 @@ public interface UserDao {
 	}
 	
 	//read 
-	public default List<Product> getAllUsers() throws DaoException {
+	public default List<User> getAllUsers() throws DaoException {
 		throw new DaoException("Method not implemented");
 	}
 	
