@@ -5458,3 +5458,70 @@ org.eclipse.core.runtime.CoreException: Launch configuration ASTFrame references
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.jdt.launching 4 107 2022-07-03 17:33:05.987
 !MESSAGE Launch configuration ASTFrame references non-existing project calendar.
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-04 09:49:16.733
+!MESSAGE [Info]	ESLint server running in node v16.13.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-04 09:49:17.530
+!MESSAGE [Info]	[lspserver] Using Typescript version (user-setting) 4.5.5 from path "C:\Users\foran\.p2\pool\plugins\org.eclipse.wildwebdeveloper_0.5.20.202202041634\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-07-04 09:49:21.112
+!MESSAGE [Error]	[tsserver] npm notice 
+npm notice New minor version of npm available! 8.1.0 -> 8.13.2
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v8.13.2>
+npm notice Run `npm install -g npm@8.13.2` to update!
+npm notice 
+
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2022-07-05 13:46:38.047
+!MESSAGE /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+!STACK 0
+java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:115)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:240)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:37)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:263)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.createURI(XMLCatalogs.java:139)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:87)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:65)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceConstants.storePreferencesToLemminxOptions(XMLPreferenceConstants.java:90)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:163)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:158)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$8(LanguageServerWrapper.java:353)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-05 15:17:09.771
+!MESSAGE [Info]	ESLint server running in node v16.13.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-05 15:17:10.449
+!MESSAGE [Info]	[lspserver] Using Typescript version (user-setting) 4.5.5 from path "C:\Users\foran\.p2\pool\plugins\org.eclipse.wildwebdeveloper_0.5.20.202202041634\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-05 15:17:40.551
+!MESSAGE [Info]	ESLint server running in node v16.13.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-05 15:17:40.809
+!MESSAGE [Info]	[lspserver] Using Typescript version (user-setting) 4.5.5 from path "C:\Users\foran\.p2\pool\plugins\org.eclipse.wildwebdeveloper_0.5.20.202202041634\node_modules\typescript\lib\tsserver.js"
