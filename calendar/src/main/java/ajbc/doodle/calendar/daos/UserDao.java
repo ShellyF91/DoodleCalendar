@@ -6,7 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import ajbc.doodle.calendar.entities.User;
 
-@Transactional(rollbackFor = {DaoException.class}, readOnly = true)
+//@Transactional(rollbackFor = {DaoException.class}, readOnly = true)
 public interface UserDao {
 	
 	//create 
@@ -21,19 +21,20 @@ public interface UserDao {
 	}
 	
 	//read 
+	@Transactional(readOnly = true)
 	public default List<User> getAllUsers() throws DaoException {
 		throw new DaoException("Method not implemented");
 	}
 	
+	@Transactional(readOnly = true)
+	public default User getUserById(Integer userId) throws DaoException {
+		throw new DaoException("Method not implemented");
+	}
+	
+	@Transactional(readOnly = true)
 	public default User getUserByEmail(String email) throws DaoException {
 		throw new DaoException("Method not implemented");
 	}
-	
-	public default User getUserById(Integer UserId) throws DaoException {
-		throw new DaoException("Method not implemented");
-	}
-	
-	
 	
 	//update 
 	@Transactional(readOnly = false)
@@ -56,15 +57,6 @@ public interface UserDao {
 	public default void softDeleteUser(Integer UserId) throws DaoException {
 		throw new DaoException("Method not implemented");
 	}
-
-
-
-	
-	
-	
-	
-	
-	
 
 }
 

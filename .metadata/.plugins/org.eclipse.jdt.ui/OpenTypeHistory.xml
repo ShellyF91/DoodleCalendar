@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{UserDao.java[UserDao" modifiers="513" timestamp="1657026617571"/>
+    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{NotificationDao.java[NotificationDao" modifiers="513" timestamp="1657106310607"/>
+    <typeInfo handle="=calendar/C:\/Program Files\/Java\/jdk-18\/lib\/jrt-fs.jar`java.xml=/maven.pomderived=/true=/&lt;org.w3c.dom(Notation.class[Notation" modifiers="1537" timestamp="1648975530791"/>
+    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{EventDao.java[EventDao" modifiers="513" timestamp="1657078799044"/>
+    <typeInfo handle="=calendar/C:\/Users\/foran\/.m2\/repository\/org\/hibernate\/hibernate-core\/5.6.9.Final\/hibernate-core-5.6.9.Final.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate=/=/maven.artifactId=/hibernate-core=/=/maven.version=/5.6.9.Final=/=/maven.scope=/compile=/&lt;org.hibernate.event.service.spi(EventActionWithParameter.class[EventActionWithParameter" modifiers="1537" timestamp="1656832136619"/>
+</typeInfoHistroy>

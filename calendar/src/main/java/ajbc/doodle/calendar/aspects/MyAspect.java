@@ -13,7 +13,7 @@ import ajbc.doodle.calendar.daos.DaoException;
 @Aspect
 @Component
 public class MyAspect {
-	@Around("execution(* ajbc.doodle.calendar.daos.ProductDao.get*(Double, Double))")
+	@Around("execution(* ajbc.doodle.calendar.daos.UserDao.get*(Double, Double))")
 	public Object swapInputs(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
 		Object[] args = proceedingJoinPoint.getArgs();
 		Double min = (Double) args[0];
@@ -25,7 +25,7 @@ public class MyAspect {
 	}
 	
 	
-	@AfterThrowing(throwing = "ex", pointcut = "execution(* ajbc.doodle.calendar.daos.ProductDao.*(..))")
+	@AfterThrowing(throwing = "ex", pointcut = "execution(* ajbc.doodle.calendar.daos.UserDao.*(..))")
 	public void convertToDaoException(Throwable ex) throws DaoException {
 		throw new DaoException(ex);
 	}
