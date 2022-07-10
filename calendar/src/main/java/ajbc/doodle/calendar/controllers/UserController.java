@@ -62,6 +62,7 @@ public class UserController {
 		try {
 			User user = userService.getUserByEmail(email);
 			userService.logout(user);
+			System.out.println("in logout");
 			return ResponseEntity.ok().body("Logged out");
 		} catch (DaoException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
@@ -71,10 +72,14 @@ public class UserController {
 	@PostMapping("/isSubscribed")
 	public boolean isSubscribed(@RequestBody SubscriptionEndpoint subscription) throws DaoException {
 		List<User> users = userService.getAllUsers();
-		for(User user : users)
-			if(user.getEndPoint().equals(subscription.getEndpoint()))
+		System.out.println("in isSubscribed");
+		for(User user : users) {
+			if(user.getEndPoint() != null) {
+				if(user.getEndPoint().equals(subscription.getEndpoint()))
 					return true;
-			return false;
+			}
+		}
+		return false;
 	}
 	
 	
