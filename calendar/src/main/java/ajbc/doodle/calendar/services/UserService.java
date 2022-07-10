@@ -52,7 +52,8 @@ public class UserService {
 	}
 	
 	public User getUserByEmail(String email) throws DaoException {
-		return userDao.getUserByEmail(email);
+		 User user = userDao.getUserByEmail(email);
+		 return user;
 	}
 	
 //update	

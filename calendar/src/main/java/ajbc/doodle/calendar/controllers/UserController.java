@@ -45,12 +45,21 @@ public class UserController {
 		}
 	}
 	
+	@RequestMapping(method = RequestMethod.GET, path = "/email/{email}")
+	public ResponseEntity<?> getUserByEmail(@PathVariable String email) throws DaoException {
+		try {
+			User user = userService.getUserByEmail(email);
+			return ResponseEntity.ok(user);
+		} catch (DaoException e) {
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+		}
+	}
+	
 	@RequestMapping(method = RequestMethod.POST, path = "/login/{email}")
 	public ResponseEntity<?> login(@RequestBody Subscription subscription, @PathVariable(required = false) String email) throws DaoException {
 		try {
 			User user = userService.getUserByEmail(email);
 			userService.login(user, subscription);
-			System.out.println("in login");
 			return ResponseEntity.ok().body("Logged in");
 		} catch (DaoException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
@@ -62,7 +71,6 @@ public class UserController {
 		try {
 			User user = userService.getUserByEmail(email);
 			userService.logout(user);
-			System.out.println("in logout");
 			return ResponseEntity.ok().body("Logged out");
 		} catch (DaoException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
@@ -71,8 +79,8 @@ public class UserController {
 	
 	@PostMapping("/isSubscribed")
 	public boolean isSubscribed(@RequestBody SubscriptionEndpoint subscription) throws DaoException {
-		List<User> users = userService.getAllUsers();
 		System.out.println("in isSubscribed");
+		List<User> users = userService.getAllUsers();
 		for(User user : users) {
 			if(user.getEndPoint() != null) {
 				if(user.getEndPoint().equals(subscription.getEndpoint()))

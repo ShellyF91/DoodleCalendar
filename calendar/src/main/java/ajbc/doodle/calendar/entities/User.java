@@ -50,16 +50,16 @@ public class User {
 	private boolean isDeleted;
 	private boolean isLoggedin;
 	
-	@JsonProperty(access = Access.WRITE_ONLY)
+	@JsonIgnore
 	@ManyToMany(mappedBy = "participants")
 	private Set<Event> events; 
 	
 //for login
-	@JsonProperty(access = Access.WRITE_ONLY)
+	@JsonIgnore
 	private String endPoint;
-	@JsonProperty(access = Access.WRITE_ONLY)
+	@JsonIgnore
 	private String p256dh;
-	@JsonProperty(access = Access.WRITE_ONLY)
+	@JsonIgnore
 	private String auth;
 
 	
