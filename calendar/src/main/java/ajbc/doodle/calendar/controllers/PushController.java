@@ -100,17 +100,17 @@ public class PushController {
 	}
 
 	
-	@PostMapping("/unsubscribe/{email}")
-	public void unsubscribe(@RequestBody SubscriptionEndpoint subscription, @PathVariable(required = false) String email) {
-		this.subscriptions.remove(subscription.getEndpoint());
-		System.out.println("Subscription with email "+email+" got removed!");
-	}
-
-
-	@PostMapping("/isSubscribed")
-	public boolean isSubscribed(@RequestBody SubscriptionEndpoint subscription) {
-		return this.subscriptions.containsKey(subscription.getEndpoint());
-	}
+//	@PostMapping("/unsubscribe/{email}")
+//	public void unsubscribe(@RequestBody SubscriptionEndpoint subscription, @PathVariable(required = false) String email) {
+//		this.subscriptions.remove(subscription.getEndpoint());
+//		System.out.println("Subscription with email "+email+" got removed!");
+//	}
+//
+//
+//	@PostMapping("/isSubscribed")
+//	public boolean isSubscribed(@RequestBody SubscriptionEndpoint subscription) {
+//		return this.subscriptions.containsKey(subscription.getEndpoint());
+//	}
 
 
 	

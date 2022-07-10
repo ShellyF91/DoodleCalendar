@@ -48,7 +48,8 @@ public class seedDB {
 
 	public void seedUsers() throws DaoException{
 		List<User> users = userService.getAllUsers();
-		if (users == null || users.size() == 0) {
+		if (users.size() == 0
+				|| users == null ) {
 			userService.addUser(new User("Shelly", "Foran", "foranshelly@gmail.com",
 					LocalDateTime.of(1991, 11, 04, 0, 0),
 					LocalDateTime.now()));
@@ -71,7 +72,8 @@ public class seedDB {
 		participants.add(user3);
 
 		List<Event> events = eventService.getAllEvents();
-		if (events == null || events.size() == 0) {
+		if (events.size() == 0
+				|| events == null ) {
 			eventService.addEvent(new Event(9, user1, "Dinner", false, 
 					LocalDateTime.of(2022, 07, 15, 20, 00), LocalDateTime.of(2022, 07, 15, 22, 00),
 					"Karin's house", "italian dinner", 3, Repeating.NONE, participants));
@@ -95,7 +97,8 @@ public class seedDB {
 		Event event3 = eventService.getEventById(6);
 		
 		List<Notification> notifications = notificationService.getAllNotifications();
-		if (notifications == null || notifications.size() == 0) {
+		if (notifications.size() == 0
+				|| notifications == null) {
 			Notification n1 = new Notification(event1, user1, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
 			Notification n2 = new Notification(event2, user2, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
 			Notification n3 = new Notification(event3, user3, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");

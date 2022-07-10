@@ -50,10 +50,19 @@ public class User {
 	private boolean isDeleted;
 	private boolean isLoggedin;
 	
-
+	@JsonProperty(access = Access.WRITE_ONLY)
 	@ManyToMany(mappedBy = "participants")
 	private Set<Event> events; 
+	
+//for login
+	@JsonProperty(access = Access.WRITE_ONLY)
+	private String endPoint;
+	@JsonProperty(access = Access.WRITE_ONLY)
+	private String p256dh;
+	@JsonProperty(access = Access.WRITE_ONLY)
+	private String auth;
 
+	
 	public User() {
 		isDeleted = false;
 		isLoggedin = false;
@@ -68,6 +77,9 @@ public class User {
 		setJoinDate(joinDate);
 		isDeleted = false;
 		isLoggedin = false;
+		endPoint = null;
+		p256dh = null; 
+		auth = null; 
 		
 		events = new HashSet<Event>();
 	}
