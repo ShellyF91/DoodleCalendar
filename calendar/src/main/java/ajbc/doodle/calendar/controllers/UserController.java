@@ -30,9 +30,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import ajbc.doodle.calendar.Application;
 import ajbc.doodle.calendar.daos.DaoException;
 import ajbc.doodle.calendar.entities.User;
+import ajbc.doodle.calendar.entities.webpush.PushMessage;
 import ajbc.doodle.calendar.entities.webpush.Subscription;
 import ajbc.doodle.calendar.entities.webpush.SubscriptionEndpoint;
 import ajbc.doodle.calendar.services.CryptoService;
+import ajbc.doodle.calendar.services.MessagePushService;
 import ajbc.doodle.calendar.services.UserService;
 
 
@@ -43,6 +45,9 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	MessagePushService messagePushService;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<User>> getAllUsers() throws DaoException {
@@ -72,16 +77,19 @@ public class UserController {
 		}
 	}
 	
-
+//login
 	@RequestMapping(method = RequestMethod.POST, path = "/login/{email}")
-	public ResponseEntity<?> login(@RequestBody Subscription subscription, @PathVariable(required = false) String email) throws DaoException {
+	public ResponseEntity<?> login(@RequestBody Subscription subscription, @PathVariable(required = false) String email) throws DaoException, InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException, InvalidKeySpecException, InvalidAlgorithmParameterException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException {
 		try {
 			User user = userService.getUserByEmail(email);
 			userService.login(user, subscription);
+			messagePushService.sendPushMessage(user, messagePushService.encryptMessage(user, new PushMessage("message: ", "hello")));
+
 			return ResponseEntity.ok().body("Logged in");
 		} catch (DaoException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		}
+		
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, path = "/logout/{email}")

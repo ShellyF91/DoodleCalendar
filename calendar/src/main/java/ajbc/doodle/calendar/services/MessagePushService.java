@@ -73,10 +73,10 @@ public class MessagePushService {
 		return this.serverKeys.getPublicKeyBase64();
 	}
 	
-	private boolean sendPushMessage(Subscription subscription, byte[] body) {
+	public boolean sendPushMessage(User user, byte[] body) {
 		String origin = null;
 		try {
-			URL url = new URL(subscription.getEndpoint());
+			URL url = new URL(user.getEndPoint());
 			origin = url.getProtocol() + "://" + url.getHost();
 		} catch (MalformedURLException e) {
 			Application.logger.error("create origin", e);
@@ -89,7 +89,7 @@ public class MessagePushService {
 		String token = JWT.create().withAudience(origin).withExpiresAt(expires)
 				.withSubject("mailto:example@example.com").sign(this.jwtAlgorithm);
 
-		URI endpointURI = URI.create(subscription.getEndpoint());
+		URI endpointURI = URI.create(user.getEndPoint());
 
 		Builder httpRequestBuilder = HttpRequest.newBuilder();
 		if (body != null) {
@@ -107,11 +107,11 @@ public class MessagePushService {
 
 			switch (response.statusCode()) {
 			case 201:
-				Application.logger.info("Push message successfully sent: {}", subscription.getEndpoint());
+				Application.logger.info("Push message successfully sent: {}", user.getEndPoint());
 				break;
 			case 404:
 			case 410:
-				Application.logger.warn("Subscription not found or gone: {}", subscription.getEndpoint());
+				Application.logger.warn("Subscription not found or gone: {}", user.getEndPoint());
 				// remove subscription from our collection of subscriptions
 				return true;
 			case 429:
