@@ -28,6 +28,9 @@ public class NotificationController {
 	@Autowired
 	MessagePushService messagePushService;
 	
+	@Autowired
+	private NotificationManager notificationManager;
+	
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Notification>> getAllNotifications() throws DaoException {
 		List<Notification> notifications = notificationService.getAllNotifications();
