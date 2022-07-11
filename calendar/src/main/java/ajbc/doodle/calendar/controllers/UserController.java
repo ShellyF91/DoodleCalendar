@@ -1,10 +1,22 @@
 package ajbc.doodle.calendar.controllers;
 
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,10 +24,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import ajbc.doodle.calendar.Application;
 import ajbc.doodle.calendar.daos.DaoException;
 import ajbc.doodle.calendar.entities.User;
 import ajbc.doodle.calendar.entities.webpush.Subscription;
 import ajbc.doodle.calendar.entities.webpush.SubscriptionEndpoint;
+import ajbc.doodle.calendar.services.CryptoService;
 import ajbc.doodle.calendar.services.UserService;
 
 
@@ -26,7 +43,7 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
-	
+
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<User>> getAllUsers() throws DaoException {
 		List<User> users = userService.getAllUsers();
@@ -55,6 +72,7 @@ public class UserController {
 		}
 	}
 	
+
 	@RequestMapping(method = RequestMethod.POST, path = "/login/{email}")
 	public ResponseEntity<?> login(@RequestBody Subscription subscription, @PathVariable(required = false) String email) throws DaoException {
 		try {
@@ -79,7 +97,6 @@ public class UserController {
 	
 	@PostMapping("/isSubscribed")
 	public boolean isSubscribed(@RequestBody SubscriptionEndpoint subscription) throws DaoException {
-		System.out.println("in isSubscribed");
 		List<User> users = userService.getAllUsers();
 		for(User user : users) {
 			if(user.getEndPoint() != null) {
@@ -89,8 +106,5 @@ public class UserController {
 		}
 		return false;
 	}
-	
-	
-
 
 }

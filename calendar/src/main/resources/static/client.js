@@ -34,7 +34,6 @@ async function checkSubscription() {
 	const registration = await navigator.serviceWorker.ready;
 	const subscription = await registration.pushManager.getSubscription();
 	if (subscription) {
-
 		const response = await fetch("/users/isSubscribed/", {
 			method: 'POST',
 			body: JSON.stringify({ endpoint: subscription.endpoint }),
@@ -58,7 +57,7 @@ async function checkSubscription() {
 }
 
 async function init() {
-	fetch('/publicSigningKey')
+	fetch('/notifications/publicSigningKey/')
 		.then(response => response.arrayBuffer())
 		.then(key => this.publicSigningKey = key)
 		.finally(() => console.info('Application Server Public Key fetched from the server'));
