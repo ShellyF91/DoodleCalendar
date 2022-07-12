@@ -22,6 +22,7 @@ public class EventController {
 	@Autowired
 	private EventService eventService;
 	
+//get	
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Event>> getAllEvents() throws DaoException {
 		List<Event> events = eventService.getAllEvents();
@@ -37,6 +38,7 @@ public class EventController {
 			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
 		}
 	}
+
 	
 //	@RequestMapping(method = RequestMethod.GET, path = "/inRange/{startYear, startMonth, startDay, startHour, startMinute, "
 //						+ "endYear, endMonth, endDay, endHour, endMinute" + "}")

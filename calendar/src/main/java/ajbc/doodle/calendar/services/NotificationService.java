@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import ajbc.doodle.calendar.daos.DaoException;
 import ajbc.doodle.calendar.daos.HTEventDao;
 import ajbc.doodle.calendar.daos.HTNotificationDao;
+import ajbc.doodle.calendar.daos.HTUserDao;
 import ajbc.doodle.calendar.entities.Notification;
 
 @Service
@@ -19,8 +20,16 @@ public class NotificationService {
 	@Autowired
 	HTNotificationDao notificationDao;
 	
+	@Autowired
+	HTUserDao userDao;
+	
+	@Autowired
+	HTEventDao eventsDao;
+	
 //add
-	public void addNotification(Notification notification) throws DaoException {
+	public void addNotification(Integer userId, Integer eventId, Notification notification) throws DaoException {
+		notification.setEvent(eventsDao.getEventById(eventId));
+		notification.setUser(userDao.getUserById(userId));
 		notificationDao.addNotification(notification);
 	}
 	
@@ -66,7 +75,5 @@ public class NotificationService {
 	public void softDeleteNotificationsList(List<Integer> notificationsIdList) throws DaoException {
 		notificationDao.softDeleteNotificationsList(notificationsIdList);
 	}
-	
-	
-	
+
 }

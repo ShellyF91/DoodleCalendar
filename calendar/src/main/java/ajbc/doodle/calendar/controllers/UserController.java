@@ -45,10 +45,8 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
-	
-	@Autowired
-	MessagePushService messagePushService;
 
+	
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<User>> getAllUsers() throws DaoException {
 		List<User> users = userService.getAllUsers();
@@ -83,13 +81,10 @@ public class UserController {
 		try {
 			User user = userService.getUserByEmail(email);
 			userService.login(user, subscription);
-			messagePushService.sendPushMessage(user, messagePushService.encryptMessage(user, new PushMessage("message: ", "hello")));
-
 			return ResponseEntity.ok().body("Logged in");
 		} catch (DaoException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		}
-		
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, path = "/logout/{email}")

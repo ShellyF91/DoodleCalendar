@@ -3762,3 +3762,459 @@ org.eclipse.core.runtime.CoreException: Launch configuration ASTFrame references
 2022-07-11 12:10:11,513 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
 2022-07-11 12:10:11,517 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-07-11 12:10:11,517 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-11 12:10:11,517 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-11 12:11:05,000 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-11 12:11:05,001 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-11 12:11:05,002 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-11 12:11:05,006 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-11 12:11:05,009 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-11 12:11:05,009 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-11 12:11:05,009 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-11 12:13:43,933 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-11 12:13:43,934 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-11 12:13:43,935 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-11 12:13:43,942 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-11 12:13:43,946 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-11 12:13:43,946 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-11 12:13:43,946 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 06:00:24,518 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:00:24,518 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:00:24,520 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 06:00:24,674 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 06:00:24,679 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:00:24,679 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:00:24,680 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 06:08:48,502 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:08:48,503 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:08:48,504 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 06:08:48,598 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 06:08:48,602 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:08:48,602 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:08:48,602 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 06:09:00,909 [Worker-145: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:09:00,909 [Worker-145: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:09:00,911 [Worker-145: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 06:09:00,918 [Worker-145: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 06:09:00,922 [Worker-145: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:09:00,922 [Worker-145: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:09:00,922 [Worker-145: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 06:14:02,328 [Worker-143: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:14:02,328 [Worker-143: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:14:02,329 [Worker-143: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 06:14:02,334 [Worker-143: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 06:14:02,337 [Worker-143: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 06:14:02,337 [Worker-143: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 06:14:02,338 [Worker-143: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 07:21:05,539 [Worker-154: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 07:21:05,539 [Worker-154: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 07:21:05,540 [Worker-154: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 07:21:05,583 [Worker-154: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 07:21:05,586 [Worker-154: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 07:21:05,586 [Worker-154: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 07:21:05,586 [Worker-154: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 09:10:32,739 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 09:10:32,739 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 09:10:32,740 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 09:10:32,758 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 09:10:32,761 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 09:10:32,761 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 09:10:32,761 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 10:04:54,659 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:04:54,659 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:04:54,660 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 10:04:54,681 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 10:04:54,685 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:04:54,685 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:04:54,685 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 10:05:18,074 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:05:18,074 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:05:18,075 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 10:05:18,168 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 10:05:18,171 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:05:18,171 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:05:18,171 [Worker-153: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 10:09:06,796 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:09:06,796 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:09:06,798 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 10:09:06,809 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 10:09:06,813 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:09:06,813 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:09:06,813 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 10:12:06,246 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:12:06,247 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:12:06,248 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 10:12:06,257 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 10:12:06,263 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:12:06,263 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:12:06,263 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 10:53:13,423 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:53:13,424 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:53:13,425 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 10:53:13,463 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 10:53:13,467 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 10:53:13,467 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 10:53:13,467 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:24:33,466 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:24:33,466 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:24:33,467 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:24:33,513 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:24:33,516 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:24:33,516 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:24:33,516 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:24:51,215 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:24:51,215 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:24:51,216 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:24:51,225 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:24:51,229 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:24:51,229 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:24:51,229 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:33:40,631 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:33:40,631 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:33:40,633 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:33:40,646 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:33:40,650 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:33:40,650 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:33:40,650 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:34:27,830 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:34:27,830 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:34:27,832 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:34:27,839 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:34:27,843 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:34:27,843 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:34:27,843 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:37:02,862 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:37:02,862 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:37:02,863 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:37:02,870 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:37:02,874 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:37:02,874 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:37:02,874 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:41:35,726 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:41:35,726 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:41:35,728 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:41:35,732 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:41:35,735 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:41:35,735 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:41:35,735 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:43:51,256 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:43:51,257 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:43:51,257 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:43:51,263 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:43:51,266 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:43:51,266 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:43:51,266 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:44:53,392 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:44:53,392 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:44:53,393 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:44:53,401 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:44:53,405 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:44:53,405 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:44:53,406 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:47:54,105 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:47:54,106 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:47:54,108 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:47:54,114 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:47:54,118 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:47:54,118 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:47:54,118 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 14:48:28,820 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:48:28,820 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:48:28,821 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 14:48:28,825 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 14:48:28,829 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 14:48:28,829 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 14:48:28,830 [Worker-179: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 15:03:08,672 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:03:08,672 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:03:08,673 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 15:03:08,681 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 15:03:08,683 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:03:08,684 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:03:08,684 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 15:10:20,875 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:10:20,876 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:10:20,876 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 15:10:20,884 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 15:10:20,888 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:10:20,888 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:10:20,888 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 15:11:07,098 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:11:07,099 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:11:07,101 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 15:11:07,108 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 15:11:07,112 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:11:07,112 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:11:07,112 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 15:11:33,139 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:11:33,140 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:11:33,141 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 15:11:33,155 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 15:11:33,158 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:11:33,158 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:11:33,159 [Worker-183: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 15:29:20,642 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:29:20,642 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:29:20,644 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 15:29:20,652 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 15:29:20,656 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:29:20,656 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:29:20,656 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 15:33:23,591 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:33:23,591 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:33:23,592 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 15:33:23,611 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 15:33:23,615 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 15:33:23,615 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 15:33:23,615 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:10:55,276 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:10:55,276 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:10:55,278 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:10:55,303 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:10:55,306 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:10:55,306 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:10:55,306 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:12:51,242 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:12:51,243 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:12:51,244 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:12:51,251 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:12:51,255 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:12:51,255 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:12:51,256 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:30:20,225 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:30:20,225 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:30:20,225 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:30:20,332 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:30:20,337 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:30:20,337 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:30:20,337 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:31:26,446 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:31:26,446 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:31:26,447 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:31:26,457 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:31:26,461 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:31:26,461 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:31:26,461 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:31:31,715 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:31:31,715 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:31:31,716 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:31:31,736 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:31:31,739 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:31:31,739 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:31:31,739 [Worker-190: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:33:43,430 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:33:43,430 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:33:43,432 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:33:43,439 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:33:43,442 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:33:43,442 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:33:43,442 [Worker-184: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:41:01,843 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:41:01,843 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:41:01,844 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:41:01,852 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:41:01,855 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:41:01,855 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:41:01,855 [Worker-192: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:44:24,184 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:44:24,184 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:44:24,185 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:44:24,190 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:44:24,194 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:44:24,194 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:44:24,194 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:45:42,863 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:45:42,863 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:45:42,864 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:45:42,870 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:45:42,872 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:45:42,872 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:45:42,872 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:48:12,907 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:48:12,907 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:48:12,908 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:48:12,914 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:48:12,916 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:48:12,916 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:48:12,916 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 16:51:24,601 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:51:24,601 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:51:24,602 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 16:51:24,610 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 16:51:24,614 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 16:51:24,615 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 16:51:24,615 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:01:58,047 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:01:58,047 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:01:58,048 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:01:58,056 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:01:58,060 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:01:58,060 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:01:58,060 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:09:04,383 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:09:04,383 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:09:04,384 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:09:04,398 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:09:04,402 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:09:04,402 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:09:04,402 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:09:13,055 [Worker-201: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:09:13,056 [Worker-201: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:09:13,057 [Worker-201: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:09:13,066 [Worker-201: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:09:13,068 [Worker-201: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:09:13,068 [Worker-201: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:09:13,068 [Worker-201: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:12:00,066 [Worker-203: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:12:00,066 [Worker-203: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:12:00,067 [Worker-203: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:12:00,072 [Worker-203: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:12:00,076 [Worker-203: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:12:00,076 [Worker-203: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:12:00,076 [Worker-203: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:16:20,381 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:16:20,381 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:16:20,382 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:16:20,390 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:16:20,393 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:16:20,394 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:16:20,394 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:24:19,623 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:24:19,624 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:24:19,625 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:24:19,633 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:24:19,637 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:24:19,638 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:24:19,638 [Worker-191: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:29:44,944 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:29:44,944 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:29:44,945 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:29:44,953 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:29:44,956 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:29:44,956 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:29:44,956 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:32:41,000 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:32:41,000 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:32:41,001 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:32:41,007 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:32:41,009 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:32:41,009 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:32:41,009 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 17:56:21,227 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:56:21,227 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:56:21,228 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 17:56:21,235 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 17:56:21,239 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 17:56:21,240 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 17:56:21,240 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 18:00:32,068 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:00:32,068 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:00:32,069 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 18:00:32,079 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 18:00:32,082 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:00:32,082 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:00:32,082 [Worker-209: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 18:05:59,515 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:05:59,515 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:05:59,516 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 18:05:59,521 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 18:05:59,524 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:05:59,524 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:05:59,524 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 18:13:19,343 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:13:19,344 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:13:19,345 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 18:13:19,351 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 18:13:19,355 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:13:19,355 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:13:19,355 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 18:18:07,320 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:18:07,320 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:18:07,321 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 18:18:07,329 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 18:18:07,334 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:18:07,334 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:18:07,334 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 18:45:08,338 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:45:08,338 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:45:08,339 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 18:45:08,351 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 18:45:08,355 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:45:08,355 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:45:08,355 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 18:50:17,623 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:50:17,623 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:50:17,624 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 18:50:17,638 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 18:50:17,642 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:50:17,642 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:50:17,642 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 18:58:01,573 [Worker-221: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:58:01,573 [Worker-221: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:58:01,574 [Worker-221: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 18:58:01,580 [Worker-221: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 18:58:01,583 [Worker-221: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 18:58:01,583 [Worker-221: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 18:58:01,583 [Worker-221: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:06:41,462 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:06:41,463 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:06:41,464 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:06:41,472 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:06:41,477 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:06:41,477 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:06:41,477 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:08:13,254 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:08:13,254 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:08:13,255 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:08:13,262 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:08:13,265 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:08:13,266 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:08:13,266 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:34:23,761 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:34:23,762 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:34:23,763 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:34:23,773 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:34:23,776 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:34:23,776 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:34:23,776 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:34:44,899 [Worker-219: Launching Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:34:44,899 [Worker-219: Launching Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:34:44,900 [Worker-219: Launching Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:34:44,916 [Worker-219: Launching Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:34:44,918 [Worker-219: Launching Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:34:44,918 [Worker-219: Launching Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:34:44,918 [Worker-219: Launching Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:38:20,106 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:38:20,106 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:38:20,107 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:38:20,111 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:38:20,114 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:38:20,114 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:38:20,114 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:40:27,619 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:40:27,619 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:40:27,620 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:40:27,628 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:40:27,631 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:40:27,631 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:40:27,631 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:42:00,574 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:42:00,575 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:42:00,576 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:42:00,580 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:42:00,583 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:42:00,583 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:42:00,583 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:43:12,821 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:43:12,821 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:43:12,823 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:43:12,829 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:43:12,833 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:43:12,833 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:43:12,833 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources
+2022-07-12 19:45:54,760 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:45:54,761 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:45:54,762 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-12 19:45:54,767 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-07-12 19:45:54,770 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-12 19:45:54,770 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-12 19:45:54,770 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\foran\Git\DoodleCalendar\calendar\src\test\resources

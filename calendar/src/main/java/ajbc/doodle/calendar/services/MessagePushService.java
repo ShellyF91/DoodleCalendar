@@ -63,16 +63,6 @@ public class MessagePushService {
 		return result;
 	}
 	
-	@GetMapping(path = "/publicSigningKey", produces = "application/octet-stream")
-	public byte[] publicSigningKey() {
-		return this.serverKeys.getPublicKeyUncompressed();
-	}
-
-	@GetMapping(path = "/publicSigningKeyBase64")
-	public String publicSigningKeyBase64() {
-		return this.serverKeys.getPublicKeyBase64();
-	}
-	
 	public boolean sendPushMessage(User user, byte[] body) {
 		String origin = null;
 		try {
@@ -132,6 +122,7 @@ public class MessagePushService {
 
 		return false;
 	}
+	
 	
 	
 

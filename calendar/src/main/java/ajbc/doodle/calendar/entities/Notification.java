@@ -48,6 +48,7 @@ public class Notification {
 	private LocalDateTime timeOfNotification;
 	private String title;
 	boolean isDeleted;
+	boolean isHandled;
  
 	public Notification() {}
 	
@@ -57,6 +58,7 @@ public class Notification {
 		setEvent(event);
 		setUser(user);
 		isDeleted = false;
+		isHandled = false;
 		eventId = event.getEventId();
 		userId = user.getUserId();
 	}

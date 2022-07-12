@@ -39,9 +39,9 @@ public class seedDB {
 	
 	@EventListener
 	public void seedDb(ContextRefreshedEvent event) throws DaoException{
-		seedUsers();
-		seedEvents();
-		seedNotifications();
+//		seedUsers();
+//		seedEvents();
+//		seedNotifications();
 	}
 	
 
@@ -87,26 +87,26 @@ public class seedDB {
 
 	}
 	
-	private void seedNotifications() throws DaoException{
-		User user1 = userService.getUserById(9);
-		User user2 = userService.getUserById(10);
-		User user3 = userService.getUserById(11);
-
-		Event event1 = eventService.getEventById(4);
-		Event event2 = eventService.getEventById(5);
-		Event event3 = eventService.getEventById(6);
-		
-		List<Notification> notifications = notificationService.getAllNotifications();
-		if (notifications.size() == 0
-				|| notifications == null) {
-			Notification n1 = new Notification(event1, user1, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
-			Notification n2 = new Notification(event2, user2, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
-			Notification n3 = new Notification(event3, user3, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
-			notificationService.addNotification(n1);
-			notificationService.addNotification(n2);
-			notificationService.addNotification(n3);
-		}
-	}
+//	private void seedNotifications() throws DaoException{
+//		User user1 = userService.getUserById(9);
+//		User user2 = userService.getUserById(10);
+//		User user3 = userService.getUserById(11);
+//
+//		Event event1 = eventService.getEventById(4);
+//		Event event2 = eventService.getEventById(5);
+//		Event event3 = eventService.getEventById(6);
+//		
+//		List<Notification> notifications = notificationService.getAllNotifications();
+//		if (notifications.size() == 0
+//				|| notifications == null) {
+//			Notification n1 = new Notification(event1, user1, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
+//			Notification n2 = new Notification(event2, user2, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
+//			Notification n3 = new Notification(event3, user3, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
+//			notificationService.addNotification(n1);
+//			notificationService.addNotification(n2);
+//			notificationService.addNotification(n3);
+//		}
+//	}
 
 	
 
