@@ -59,7 +59,11 @@ public class NotificationService {
 	}
 	
 //update
-	public void updateNotification(Notification notification) throws DaoException {
+	public void updateNotification(Notification notification, Integer id) throws DaoException {
+		notification.setNotificationId(id);
+		Notification notificationFromDb = getNotificationById(id);
+		notification.setEvent(notificationFromDb.getEvent());
+		notification.setUser(notificationFromDb.getUser());
 		notificationDao.updateNotification(notification);
 	}
 	

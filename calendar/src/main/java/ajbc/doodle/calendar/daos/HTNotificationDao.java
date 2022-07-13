@@ -58,7 +58,8 @@ public class HTNotificationDao implements NotificationDao {
 		DetachedCriteria criteria = DetachedCriteria.forClass(Notification.class);
 		Criterion criterion = Restrictions.eq("eventId", eventId);
 		criteria.add(criterion);
-		return (List<Notification>)template.findByCriteria(criteria);
+		List<Notification> notifications = (List<Notification>)template.findByCriteria(criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY));
+		return notifications;
 	}
 	
 	@Override

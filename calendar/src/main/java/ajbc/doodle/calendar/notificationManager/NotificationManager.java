@@ -3,6 +3,7 @@ package ajbc.doodle.calendar.notificationManager;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -17,6 +18,7 @@ import ajbc.doodle.calendar.daos.HTUserDao;
 import ajbc.doodle.calendar.entities.Notification;
 import ajbc.doodle.calendar.entities.User;
 import ajbc.doodle.calendar.services.MessagePushService;
+import ajbc.doodle.calendar.services.NotificationService;
 import ajbc.doodle.calendar.services.UserService;
 
 @Component
@@ -25,6 +27,9 @@ public class NotificationManager {
 
 	@Autowired
 	UserService userService;
+	
+	@Autowired
+	NotificationService notificationService;
 	
 	@Autowired
 	private MessagePushService messagePushService;
@@ -50,15 +55,17 @@ public class NotificationManager {
 	
 	public void start(List<Notification> notificationsList) {
 		this.notificationsList = notificationsList;
-		removePastNotificationsFromList();
+		removeHandledOrSoftDeletedNotificationsFromList();
 		fromListToQueue();
 		startSupervisingThread();
 	}
 
-	private void removePastNotificationsFromList() {
+	private void removeHandledOrSoftDeletedNotificationsFromList() {
 		for(int i = 0; i < notificationsList.size(); i++) {
-			if(notificationsList.get(i).isHandled())
+			System.out.println(notificationsList.get(i).isHandled());
+			if(notificationsList.get(i).isHandled() || notificationsList.get(i).isDeleted())
 				notificationsList.remove(i);
+			System.out.println(notificationsList.size());
 		}
 	}
 
@@ -76,9 +83,11 @@ public class NotificationManager {
 			boolean isUserLoggedin;
 			
 			while ( ! notificationsQueue.isEmpty()) {
+				System.out.println(notificationsQueue.size());
 				firstInLineNotification = notificationsQueue.poll();
 				long timeToSleep = ChronoUnit.SECONDS.between(LocalDateTime.now(), firstInLineNotification.getTimeOfNotification());
-				System.out.println("time to sleep: " + timeToSleep);
+				System.out.println("time to sleep: " + timeToSleep + "seconds, " + timeToSleep/60 + " minutes, " + 
+									timeToSleep/60/60 + " hours.");
 				//if the notification time has passed and it still wasn't handle -> sleep for one second
 				if(timeToSleep < 0)
 					timeToSleep = 1;
@@ -98,6 +107,7 @@ public class NotificationManager {
 					if(isUserLoggedin)
 						executorService.execute(new NotificationDeliver(firstInLineNotification, user, messagePushService));
 					firstInLineNotification.setHandled(true);
+					notificationService.updateNotification(firstInLineNotification, firstInLineNotification.getNotificationId());
 				} catch (DaoException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -110,6 +120,29 @@ public class NotificationManager {
 	public void updateAfterAddNotification(Notification notification) {
 		supervisingThread.interrupt();
 		notificationsQueue.add(notification);
+		startSupervisingThread();
+	}
+	
+	public void updateAfterUpdateNotification(Notification notification) {
+		supervisingThread.interrupt();
+		Iterator<Notification> queueIterator = notificationsQueue.iterator();
+		while (queueIterator.hasNext()) {
+			if (notification.getNotificationId() == queueIterator.next().getNotificationId()) {
+				queueIterator.remove();
+			}
+		}
+		notificationsQueue.add(notification);
+		startSupervisingThread();
+	}
+	
+	public void deleteAfterUpdateNotification(Notification notification) {
+		supervisingThread.interrupt();
+		Iterator<Notification> queueIterator = notificationsQueue.iterator();
+		while (queueIterator.hasNext()) {
+			if (notification.getNotificationId() == queueIterator.next().getNotificationId()) {
+				queueIterator.remove();
+			}
+		}
 		startSupervisingThread();
 	}
 	

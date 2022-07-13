@@ -1,8 +1,10 @@
 package ajbc.doodle.calendar.daos;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.DetachedCriteria;
 import org.hibernate.criterion.Restrictions;
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import ajbc.doodle.calendar.entities.User;
+import ajbc.doodle.calendar.entities.UserEvent;
 
 @SuppressWarnings("unchecked")
 @Repository
@@ -20,6 +23,8 @@ public class HTUserDao implements UserDao {
 	@Autowired
 	private HibernateTemplate template;
 	
+	@Autowired
+	HTUserEventDao userEventDao;
 
 //add
 	@Override
@@ -38,7 +43,7 @@ public class HTUserDao implements UserDao {
 	@Override
 	public List<User> getAllUsers() throws DaoException {
 		DetachedCriteria criteria = DetachedCriteria.forClass(User.class);
-		return (List<User>)template.findByCriteria(criteria);
+		return (List<User>)template.findByCriteria(criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY));
 	}
 	
 	@Override
@@ -54,8 +59,17 @@ public class HTUserDao implements UserDao {
 		DetachedCriteria criteria = DetachedCriteria.forClass(User.class);
 		Criterion criterion = Restrictions.eq("email", email);
 		criteria.add(criterion);
-		List<User> users = (List<User>)template.findByCriteria(criteria);
+		List<User> users = (List<User>)template.findByCriteria(criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY));
 		return users.get(0);
+	}
+	
+	@Override
+	public List<User> getUsersOfEventByEventId(Integer eventId) throws DaoException {
+		List<UserEvent> UserEventsList = userEventDao.getUserEventsOfEventByEventId(eventId);
+		List<User> users = new ArrayList<>();
+		for(UserEvent userEvent : UserEventsList)
+			users.add(getUserById(userEvent.getUserId()));
+		return users;
 	}
 
 //update

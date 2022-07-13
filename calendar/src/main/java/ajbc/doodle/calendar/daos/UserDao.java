@@ -36,6 +36,11 @@ public interface UserDao {
 		throw new DaoException("Method not implemented");
 	}
 	
+	@Transactional(readOnly = true)
+	public default List<User> getUsersOfEventByEventId(Integer eventId) throws DaoException {
+		throw new DaoException("Method not implemented");
+	}
+	
 //update 
 	@Transactional(readOnly = false)
 	public default void updateUser(User user) throws DaoException {

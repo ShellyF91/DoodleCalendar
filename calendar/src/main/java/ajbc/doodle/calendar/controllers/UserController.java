@@ -46,7 +46,19 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+//add
+	@RequestMapping(method = RequestMethod.POST)
+	public ResponseEntity<?> addUser(@RequestBody User user) {
+		try {
+			userService.addUser(user);
+			user = userService.getUserById(user.getUserId());
+			return ResponseEntity.status(HttpStatus.CREATED).body(user);
+		} catch (DaoException e) {
+			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
+		}
+	}
 	
+//get
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<User>> getAllUsers() throws DaoException {
 		List<User> users = userService.getAllUsers();
@@ -74,6 +86,35 @@ public class UserController {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		}
 	}
+	
+//update
+	@RequestMapping(method = RequestMethod.PUT, path = "/{id}")
+	public ResponseEntity<?> updateUser(@RequestBody User user, @PathVariable Integer id) {
+		try {
+			user.setUserId(id);
+			userService.updateUser(user);
+			user = userService.getUserById(id);
+			return ResponseEntity.status(HttpStatus.OK).body(user);
+		} catch (DaoException e) {
+			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
+		}
+	}
+	
+//delete
+	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/hard/{id}")
+	public ResponseEntity<?> hardDeleteUser(@PathVariable Integer id) throws DaoException {	
+		User user = userService.getUserById(id);
+		userService.hardDeleteUser(id);
+		return ResponseEntity.status(HttpStatus.OK).body(user);
+	}
+	
+	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/soft/{id}")
+	public ResponseEntity<?> SoftDeleteUser(@PathVariable Integer id) throws DaoException {	
+		User user = userService.getUserById(id);
+		userService.softDeleteUser(id);
+		return ResponseEntity.ok(user);
+	}
+
 	
 //login
 	@RequestMapping(method = RequestMethod.POST, path = "/login/{email}")

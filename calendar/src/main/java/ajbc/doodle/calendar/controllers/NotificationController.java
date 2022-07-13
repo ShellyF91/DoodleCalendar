@@ -23,6 +23,14 @@ import ajbc.doodle.calendar.services.MessagePushService;
 import ajbc.doodle.calendar.services.NotificationService;
 import ajbc.doodle.calendar.services.UserService;
 
+
+/**
+ * 
+ * @author foran
+ *
+ */
+
+
 @RestController
 @RequestMapping("/notifications")
 public class NotificationController {
@@ -37,12 +45,23 @@ public class NotificationController {
 	private NotificationManager notificationManager;
 	
 //get
+	/**
+	 * 
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Notification>> getAllNotifications() throws DaoException {
 		List<Notification> notifications = notificationService.getAllNotifications();
 		return ResponseEntity.ok(notifications);
 	}
 	
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/id/{id}")
 	public ResponseEntity<?> getNotificationById(@PathVariable Integer id) throws DaoException {
 		try {
@@ -52,13 +71,21 @@ public class NotificationController {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		}
 	}
-	
+	/**
+	 * 
+	 * @param eventId
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/eventId/{eventId}")
 	public ResponseEntity<List<Notification>> getNotificationsByEventId(@PathVariable Integer eventId) throws DaoException {
 		List<Notification> notifications = notificationService.getNotificationsByEventId(eventId);
 		return ResponseEntity.ok(notifications);
 	}
-	
+	/**
+	 * 
+	 * @return
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/last")
 	public Notification getLastNotification() {
 		return notificationService.getLastNotification();
@@ -66,6 +93,13 @@ public class NotificationController {
 	
 	
 //add
+	/**
+	 * 
+	 * @param userId
+	 * @param eventId
+	 * @param notification
+	 * @return
+	 */
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<?> addNotification(@RequestParam int userId,
 			@RequestParam Integer eventId, @RequestBody Notification notification) {
@@ -78,18 +112,77 @@ public class NotificationController {
 			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
 		}
 	}
+
+//update 
+	/**
+	 * 
+	 * @param notification
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(method = RequestMethod.PUT, path = "/{id}")
+	public ResponseEntity<?> updateNotification(@RequestBody Notification notification, @PathVariable Integer id) {
+		try {
+			notificationService.updateNotification(notification, id);
+			notification = notificationService.getNotificationById(id);
+			notificationManager.updateAfterUpdateNotification(notification);
+			return ResponseEntity.status(HttpStatus.OK).body(notification);
+		} catch (DaoException e) {
+			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
+		}
+	}
 	
+//delete 
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
+	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/hard/{id}")
+	public ResponseEntity<?> hardDeleteNotification(@PathVariable Integer id) throws DaoException {	
+		Notification notification = notificationService.getNotificationById(id);
+		notificationService.hardDeleteNotification(id);
+		notificationManager.deleteAfterUpdateNotification(notification);
+		return ResponseEntity.status(HttpStatus.OK).body(notification);
+	}
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
+	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/soft/{id}")
+	public ResponseEntity<?> SoftDeleteNotification(@PathVariable Integer id) throws DaoException {	
+		Notification notification = notificationService.getNotificationById(id);
+		notificationService.softDeleteNotification(id);
+		notification = notificationService.getNotificationById(id);
+		notificationManager.deleteAfterUpdateNotification(notification);
+		return ResponseEntity.ok(notification);
+	}
+	/**
+	 * 
+	 * @return
+	 */
 //push controller methods
 	@GetMapping(path = "/publicSigningKey", produces = "application/octet-stream")
 	public byte[] publicSigningKey() {
 		return messagePushService.getServerKeys().getPublicKeyUncompressed();
 	}
-
+	
+	/**
+	 * 
+	 * @return
+	 */
 	@GetMapping(path = "/publicSigningKeyBase64")
 	public String publicSigningKeyBase64() {
 		return messagePushService.getServerKeys().getPublicKeyBase64();
 	}
 	
+	/**
+	 * 
+	 * @throws DaoException
+	 */
 	@PostConstruct
 	public void activateNotificationSending() throws DaoException {
 		notificationManager.start(notificationService.getAllNotifications());

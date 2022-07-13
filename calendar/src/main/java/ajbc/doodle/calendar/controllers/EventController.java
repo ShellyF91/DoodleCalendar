@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -38,29 +39,25 @@ public class EventController {
 			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
 		}
 	}
+	
+//add
+	@RequestMapping(method = RequestMethod.POST)
+	public ResponseEntity<?> addEvent(@RequestBody Event event) {
+		try {
+			eventService.addEvent(event);
+			event = eventService.getEventById(event.getEventId());
+			return ResponseEntity.status(HttpStatus.CREATED).body(event);
+		} catch (DaoException e) {
+			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
+		}
+	}
+	
+//update
+	
+	
+//delete
+	
 
-	
-//	@RequestMapping(method = RequestMethod.GET, path = "/inRange/{startYear, startMonth, startDay, startHour, startMinute, "
-//						+ "endYear, endMonth, endDay, endHour, endMinute" + "}")
-//	public ResponseEntity<?> getAllEventsInRange(@PathVariable int startYear, @PathVariable int startMonth,  
-//			@PathVariable int startDay,@PathVariable int startHour, @PathVariable int startMinute,
-//			@PathVariable int endYear, @PathVariable int endMonth,  @PathVariable int endDay
-//			,@PathVariable int endHour, @PathVariable int endMinute) throws DaoException {
-//		try {
-//			LocalDateTime start = LocalDateTime.of(startYear, startMonth, startDay, startHour, startMinute);
-//			LocalDateTime end = LocalDateTime.of(endYear, endMonth, endDay, endHour, endMinute);
-//			List<Event> events = eventService.getAllEventsInRange(start, end);
-//			return ResponseEntity.ok(events);
-//		} catch (DaoException e) {
-//			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
-//		}
-//	}
-	
-	
-	
-//	public ResponseEntity<List<Event>> getAllEventsInRange() throws DaoException {
-//		
-//	}
 	
 	
 

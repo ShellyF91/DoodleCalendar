@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.hibernate.Criteria;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.DetachedCriteria;
 import org.hibernate.criterion.Restrictions;
@@ -41,7 +42,7 @@ public class HTEventDao implements EventDao {
 	@Override
 	public List<Event> getAllEvents() throws DaoException {
 		DetachedCriteria criteria = DetachedCriteria.forClass(Event.class);
-		return(List<Event>)template.findByCriteria(criteria);
+		return(List<Event>)template.findByCriteria(criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY));
 	}
 	
 	@Override
@@ -49,7 +50,7 @@ public class HTEventDao implements EventDao {
 		DetachedCriteria criteria = DetachedCriteria.forClass(Event.class);
 		Criterion criterion = Restrictions.between("startTime", start, end);
 		criteria.add(criterion);
-		return (List<Event>)template.findByCriteria(criteria);
+		return (List<Event>)template.findByCriteria(criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY));
 	}
 	
 	@Override
@@ -60,46 +61,46 @@ public class HTEventDao implements EventDao {
 		return event;
 	}
 	
-//	@Override
-//	public List<Event> getAllEventsOfUser(Integer userId) throws DaoException {
-//		DetachedCriteria criteria = DetachedCriteria.forClass(Event.class);
-//		Criterion criterion = Restrictions.eq("userId", userId);
-//		criteria.add(criterion);
-//		List<Event> EventsOfUser = (List<Event>)template.findByCriteria(criteria);
-//		return EventsOfUser;
-//	}
-//	
-//	@Override
-//	public List<Event> getAllUpcomingEventsOfUser(Integer userId) throws DaoException {
-//		List<Event> EventsOfUser = getAllEventsOfUser(userId);
-//		List<Event> upcomingEventsOfUser = EventsOfUser.stream()
-//					.filter(event -> event.getStartTime().isAfter( LocalDateTime.now()))
-//					.collect(Collectors.toList());
-//		return upcomingEventsOfUser;
-//	}
-//	
-//	@Override
-//	public List<Event> getAllEventsOfUserInRange(Integer userId, LocalDateTime start, LocalDateTime end) throws DaoException {
-//		List<Event> EventsOfUser = getAllEventsOfUser(userId);
-//		List<Event> EventsOfUserInRange = EventsOfUser.stream()
-//				.filter(event -> event.getStartTime().isAfter(start) 
-//							   && event.getStartTime().isBefore(end))
-//				.collect(Collectors.toList());
-//		return EventsOfUserInRange;
-//	}
-//	
-//	@Override
-//	public List<Event> getAllEventsOfUserInNextHoursMinutes(Integer userId, int hours, int minutes) throws DaoException {
-//		LocalDateTime timeNow = LocalDateTime.now();
-//		LocalDateTime timeLimit = timeNow.plusHours(hours).plusMinutes(minutes);
-//		DetachedCriteria criteria = DetachedCriteria.forClass(Event.class);
-//		Criterion criterion1 = Restrictions.eq("userId", userId);
-//		criteria.add(criterion1);
-//		Criterion criterion2 = Restrictions.between("startTime", timeNow, timeLimit);
-//		criteria.add(criterion2);
-//		List<Event> EventsOfUserInNextHoursMinutes = (List<Event>)template.findByCriteria(criteria);
-//		return EventsOfUserInNextHoursMinutes;
-//	}
+	@Override
+	public List<Event> getAllEventsOfUser(Integer userId) throws DaoException {
+		DetachedCriteria criteria = DetachedCriteria.forClass(Event.class);
+		Criterion criterion = Restrictions.eq("userId", userId);
+		criteria.add(criterion);
+		List<Event> EventsOfUser = (List<Event>)template.findByCriteria(criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY));
+		return EventsOfUser;
+	}
+	
+	@Override
+	public List<Event> getAllUpcomingEventsOfUser(Integer userId) throws DaoException {
+		List<Event> EventsOfUser = getAllEventsOfUser(userId);
+		List<Event> upcomingEventsOfUser = EventsOfUser.stream()
+					.filter(event -> event.getStartTime().isAfter( LocalDateTime.now()))
+					.collect(Collectors.toList());
+		return upcomingEventsOfUser;
+	}
+	
+	@Override
+	public List<Event> getAllEventsOfUserInRange(Integer userId, LocalDateTime start, LocalDateTime end) throws DaoException {
+		List<Event> EventsOfUser = getAllEventsOfUser(userId);
+		List<Event> EventsOfUserInRange = EventsOfUser.stream()
+				.filter(event -> event.getStartTime().isAfter(start) 
+							   && event.getStartTime().isBefore(end))
+				.collect(Collectors.toList());
+		return EventsOfUserInRange;
+	}
+	
+	@Override
+	public List<Event> getAllEventsOfUserInNextHoursMinutes(Integer userId, int hours, int minutes) throws DaoException {
+		LocalDateTime timeNow = LocalDateTime.now();
+		LocalDateTime timeLimit = timeNow.plusHours(hours).plusMinutes(minutes);
+		DetachedCriteria criteria = DetachedCriteria.forClass(Event.class);
+		Criterion criterion1 = Restrictions.eq("userId", userId);
+		criteria.add(criterion1);
+		Criterion criterion2 = Restrictions.between("startTime", timeNow, timeLimit);
+		criteria.add(criterion2);
+		List<Event> EventsOfUserInNextHoursMinutes = (List<Event>)template.findByCriteria(criteria);
+		return EventsOfUserInNextHoursMinutes;
+	}
 	
 	
 //update 
