@@ -2,15 +2,19 @@ package ajbc.doodle.calendar.services;
 
 import java.util.List;
 
+import org.aspectj.apache.bcel.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import ajbc.doodle.calendar.daos.DaoException;
+import ajbc.doodle.calendar.daos.EventDao;
 import ajbc.doodle.calendar.daos.HTEventDao;
 import ajbc.doodle.calendar.daos.HTNotificationDao;
 import ajbc.doodle.calendar.daos.HTUserDao;
+import ajbc.doodle.calendar.daos.NotificationDao;
+import ajbc.doodle.calendar.daos.UserDao;
 import ajbc.doodle.calendar.entities.Notification;
 
 @Service
@@ -48,6 +52,10 @@ public class NotificationService {
 	
 	public List<Notification> getAllNotifications() throws DaoException {
 		return notificationDao.getAllNotifications();
+	}
+	
+	public Notification getLastNotification() {
+		return notificationDao.getLastNotification();
 	}
 	
 //update

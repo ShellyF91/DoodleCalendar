@@ -59,13 +59,20 @@ public class NotificationController {
 		return ResponseEntity.ok(notifications);
 	}
 	
+	@RequestMapping(method = RequestMethod.GET, path = "/last")
+	public Notification getLastNotification() {
+		return notificationService.getLastNotification();
+	}
+	
 	
 //add
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<?> createNotification(@RequestParam int userId,
+	public ResponseEntity<?> addNotification(@RequestParam int userId,
 			@RequestParam Integer eventId, @RequestBody Notification notification) {
 		try {
 			notificationService.addNotification(userId, eventId, notification);
+			Notification lastNotificationAdded = notificationService.getLastNotification();
+			notificationManager.updateAfterAddNotification(lastNotificationAdded);
 			return ResponseEntity.status(HttpStatus.CREATED).build();
 		} catch (DaoException e) {
 			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());

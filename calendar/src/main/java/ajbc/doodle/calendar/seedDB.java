@@ -87,26 +87,40 @@ public class seedDB {
 
 	}
 	
-//	private void seedNotifications() throws DaoException{
-//		User user1 = userService.getUserById(9);
-//		User user2 = userService.getUserById(10);
-//		User user3 = userService.getUserById(11);
-//
-//		Event event1 = eventService.getEventById(4);
-//		Event event2 = eventService.getEventById(5);
-//		Event event3 = eventService.getEventById(6);
-//		
+	private void seedNotifications() throws DaoException{
+		User user1 = userService.getUserById(9);
+		User user2 = userService.getUserById(10);
+		User user3 = userService.getUserById(11);
+
+		Event event1 = eventService.getEventById(4);
+		Event event2 = eventService.getEventById(5);
+		Event event3 = eventService.getEventById(6);
+		
 //		List<Notification> notifications = notificationService.getAllNotifications();
 //		if (notifications.size() == 0
 //				|| notifications == null) {
-//			Notification n1 = new Notification(event1, user1, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
-//			Notification n2 = new Notification(event2, user2, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
-//			Notification n3 = new Notification(event3, user3, LocalDateTime.of(2022, 07, 9, 22, 00), "reminder");
-//			notificationService.addNotification(n1);
-//			notificationService.addNotification(n2);
-//			notificationService.addNotification(n3);
+			Notification n1 = new Notification(event1, user1, LocalDateTime.of(2022, 07, 13, 9, 41), "Shelly, reminder 1 to event: " + event1.getTitle());
+			Notification n2 = new Notification(event2, user2, LocalDateTime.of(2022, 07, 13, 9, 41), "Karin, reminder 1 to event: " + event2.getTitle());
+			Notification n3 = new Notification(event3, user3, LocalDateTime.of(2022, 07, 13, 9, 41), "Emma, reminder 1 to event: " + event3.getTitle());
+			notificationService.addNotification(user1.getUserId(), event1.getEventId(), n1);
+			notificationService.addNotification(user2.getUserId(), event2.getEventId(), n2);
+			notificationService.addNotification(user3.getUserId(), event3.getEventId(), n3);
+			
+			Notification n11 = new Notification(event1, user1, LocalDateTime.of(2022, 07, 13, 9, 42), "Shelly, reminder 2 to event: " + event1.getTitle());
+			Notification n22 = new Notification(event2, user2, LocalDateTime.of(2022, 07, 13, 9, 42), "Karin, reminder 2 to event: " + event2.getTitle());
+			Notification n33 = new Notification(event3, user3, LocalDateTime.of(2022, 07, 13, 9, 42), "Emma, reminder 2 to event: " + event3.getTitle());
+			notificationService.addNotification(user1.getUserId(), event1.getEventId(), n11);
+			notificationService.addNotification(user2.getUserId(), event2.getEventId(), n22);
+			notificationService.addNotification(user3.getUserId(), event3.getEventId(), n33);
+			
+			Notification n111 = new Notification(event1, user1, LocalDateTime.of(2022, 07, 13, 9, 43), "Shelly, reminder 3 to event: " + event1.getTitle());
+			Notification n222 = new Notification(event2, user2, LocalDateTime.of(2022, 07, 13, 9, 43), "Karin, reminder 3 to event: " + event2.getTitle());
+			Notification n333 = new Notification(event3, user3, LocalDateTime.of(2022, 07, 13, 9, 43), "Emma, reminder 3 to event: " + event3.getTitle());
+			notificationService.addNotification(user1.getUserId(), event1.getEventId(), n111);
+			notificationService.addNotification(user2.getUserId(), event2.getEventId(), n222);
+			notificationService.addNotification(user3.getUserId(), event3.getEventId(), n333);
 //		}
-//	}
+	}
 
 	
 

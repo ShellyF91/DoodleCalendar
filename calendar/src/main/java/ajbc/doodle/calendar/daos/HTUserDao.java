@@ -1,5 +1,6 @@
 package ajbc.doodle.calendar.daos;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.hibernate.criterion.Criterion;
@@ -56,7 +57,7 @@ public class HTUserDao implements UserDao {
 		List<User> users = (List<User>)template.findByCriteria(criteria);
 		return users.get(0);
 	}
-	
+
 //update
 	@Override
 	public void updateUser(User user) throws DaoException {
@@ -84,13 +85,5 @@ public class HTUserDao implements UserDao {
 		user.setDeleted(true);
 		updateUser(user);
 	}
-
-	
-	
-	
-	
-	
-	
-
 
 }

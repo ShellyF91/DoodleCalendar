@@ -35,92 +35,21 @@ public class NotificationDeliver implements Runnable{
 	User user;
 	MessagePushService messagePushService;
 	
-	public NotificationDeliver(Notification notification, MessagePushService messagePushService) {
+	public NotificationDeliver(Notification notification, User user, MessagePushService messagePushService) {
 		this.notification = notification;
 		this.messagePushService = messagePushService;
-		user = notification.getUser();
+		this.user = user;
 	}
 	
-//	public byte[] encryptMessage(User user, Object message) throws InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException, InvalidKeySpecException, InvalidAlgorithmParameterException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException { 
-//		byte[] result = messagePushService.getCryptoService().encrypt(messagePushService.getObjectMapper().writeValueAsString(message),user.getP256dh(),user.getAuth(), 0);
-//		return result;
-//	}
-	
-
 	@Override
 	public void run() {
 		try {
-			System.out.println("in thread");
-			Random random = new Random();
-//			sendPushMessage(user, encryptMessage(user, notification.getTitle()));
-			String m = notification.getTitle();
-			messagePushService.sendPushMessage(user, messagePushService.encryptMessage(user, new PushMessage("message: ", m)));
+			String messageToSend = notification.getTitle();
+			messagePushService.sendPushMessage(user, messagePushService.encryptMessage(user, new PushMessage("message: ", messageToSend)));
 		} catch (InvalidKeyException | JsonProcessingException | NoSuchAlgorithmException | InvalidKeySpecException
 				| InvalidAlgorithmParameterException | NoSuchPaddingException | IllegalBlockSizeException
 				| BadPaddingException e) {
 			e.printStackTrace();
 		}
-		
 	}
-	
-//	public boolean sendPushMessage(User user, byte[] body) {
-//		System.out.println("in sendPushMessage in thread");
-//		String origin = null;
-//		try {
-//			URL url = new URL(user.getEndPoint());
-//			origin = url.getProtocol() + "://" + url.getHost();
-//		} catch (MalformedURLException e) {
-//			Application.logger.error("create origin", e);
-//			return true;
-//		}
-//
-//		Date today = new Date();
-//		Date expires = new Date(today.getTime() + 12 * 60 * 60 * 1000);
-//
-//		String token = JWT.create().withAudience(origin).withExpiresAt(expires)
-//				.withSubject("mailto:example@example.com").sign(messagePushService.getJwtAlgorithm());
-//
-//		URI endpointURI = URI.create(user.getEndPoint());
-//
-//		Builder httpRequestBuilder = HttpRequest.newBuilder();
-//		if (body != null) {
-//			httpRequestBuilder.POST(BodyPublishers.ofByteArray(body)).header("Content-Type", "application/octet-stream")
-//					.header("Content-Encoding", "aes128gcm");
-//		} else {
-//			httpRequestBuilder.POST(BodyPublishers.ofString(""));
-//			// httpRequestBuilder.header("Content-Length", "0");
-//		}
-//
-//		HttpRequest request = httpRequestBuilder.uri(endpointURI).header("TTL", "180")
-//				.header("Authorization", "vapid t=" + token + ", k=" + messagePushService.getServerKeys().getPublicKeyBase64()).build();
-//		try {
-//			HttpResponse<Void> response = messagePushService.getHttpClient().send(request, BodyHandlers.discarding());
-//
-//			switch (response.statusCode()) {
-//			case 201:
-//				Application.logger.info("Push message successfully sent: {}", user.getEndPoint());
-//				break;
-//			case 404:
-//			case 410:
-//				Application.logger.warn("Subscription not found or gone: {}", user.getEndPoint());
-//				return true;
-//			case 429:
-//				Application.logger.error("Too many requests: {}", request);
-//				break;
-//			case 400:
-//				Application.logger.error("Invalid request: {}", request);
-//				break;
-//			case 413:
-//				Application.logger.error("Payload size too large: {}", request);
-//				break;
-//			default:
-//				Application.logger.error("Unhandled status code: {} / {}", response.statusCode(), request);
-//			}
-//		} catch (IOException | InterruptedException e) {
-//			Application.logger.error("send push message", e);
-//		}
-//
-//		return false;
-//	}
-
 }

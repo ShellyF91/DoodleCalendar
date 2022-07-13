@@ -31,15 +31,17 @@ public class NotificationManager {
 	
 	private ExecutorService executorService;
 	
+	Thread supervisingThread;
+	
 	List<Notification> notificationsList;
 
     Comparator<Notification> timeComparator = new Comparator<>() {
         @Override
         public int compare(Notification notification1, Notification notification2) {
         	if(notification1.getTimeOfNotification().isAfter(notification2.getTimeOfNotification()))
-        		return -1;
-        	else
         		return 1;
+        	else
+        		return -1;
         }
     };
     
@@ -47,7 +49,6 @@ public class NotificationManager {
 	
 	
 	public void start(List<Notification> notificationsList) {
-		System.out.println("in start ");
 		this.notificationsList = notificationsList;
 		removePastNotificationsFromList();
 		fromListToQueue();
@@ -55,24 +56,21 @@ public class NotificationManager {
 	}
 
 	private void removePastNotificationsFromList() {
-		System.out.println("in removePastNotificationsFromList ");
-//		for(Notification notification : notificationsList) {
-//			if(notification.isHandled())
-//				notificationsList.remove(notification);
-//		}
+		for(int i = 0; i < notificationsList.size(); i++) {
+			if(notificationsList.get(i).isHandled())
+				notificationsList.remove(i);
+		}
 	}
 
 	private void fromListToQueue() {
-		System.out.println("in fromListToQueue ");
 		for(Notification notification : notificationsList) {
 			notificationsQueue.add(notification);
 		}
 	}
 	
 	private void startSupervisingThread() {
-		System.out.println("in startSupervisingThread ");
 		executorService = Executors.newCachedThreadPool();
-		Thread supervisingThread = new Thread(() -> {
+		supervisingThread = new Thread(() -> {
 			Notification firstInLineNotification;
 			User user;
 			boolean isUserLoggedin;
@@ -81,20 +79,24 @@ public class NotificationManager {
 				firstInLineNotification = notificationsQueue.poll();
 				long timeToSleep = ChronoUnit.SECONDS.between(LocalDateTime.now(), firstInLineNotification.getTimeOfNotification());
 				System.out.println("time to sleep: " + timeToSleep);
+				//if the notification time has passed and it still wasn't handle -> sleep for one second
+				if(timeToSleep < 0)
+					timeToSleep = 1;
 				try {
-//					Thread.sleep(timeToSleep * 1000);
-					Thread.sleep(1000);
+					Thread.sleep(timeToSleep * 1000);
 					System.out.println("sleep");
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
+					break;
 				} 
-				user = firstInLineNotification.getUser();
 				System.out.println("awake");
+				user = firstInLineNotification.getUser();
 				try {
-					isUserLoggedin = userService.getUserById(user.getUserId()).isLoggedin();
+					//updated user info from DB
+					user = userService.getUserById(user.getUserId());
+					isUserLoggedin = user.isLoggedin();
 					if(isUserLoggedin)
-						executorService.execute(new NotificationDeliver(firstInLineNotification, messagePushService));
+						executorService.execute(new NotificationDeliver(firstInLineNotification, user, messagePushService));
 					firstInLineNotification.setHandled(true);
 				} catch (DaoException e) {
 					// TODO Auto-generated catch block
@@ -103,9 +105,13 @@ public class NotificationManager {
 			}
 		});
 		supervisingThread.start();
-
 	}
 	
+	public void updateAfterAddNotification(Notification notification) {
+		supervisingThread.interrupt();
+		notificationsQueue.add(notification);
+		startSupervisingThread();
+	}
 	
 	
 	
