@@ -26,8 +26,9 @@ import ajbc.doodle.calendar.services.UserService;
 
 
 /**
+ * Responsible for API requests, regarding notifications.
  * 
- * @author foran
+ * @author Shelly
  *
  */
 
@@ -73,6 +74,7 @@ public class NotificationController {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		}
 	}
+	
 	/**
 	 * 
 	 * @param eventId
@@ -84,6 +86,7 @@ public class NotificationController {
 		List<Notification> notifications = notificationService.getNotificationsByEventId(eventId);
 		return ResponseEntity.ok(notifications);
 	}
+	
 	/**
 	 * 
 	 * @return
@@ -117,6 +120,7 @@ public class NotificationController {
 	}
 
 //update 
+	
 	/**
 	 * 
 	 * @param notification
@@ -150,6 +154,7 @@ public class NotificationController {
 		notificationManager.deleteAfterUpdateNotification(notification);
 		return ResponseEntity.status(HttpStatus.OK).body(notification);
 	}
+	
 	/**
 	 * 
 	 * @param id

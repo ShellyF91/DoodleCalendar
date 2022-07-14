@@ -19,6 +19,13 @@ import ajbc.doodle.calendar.entities.Event;
 import ajbc.doodle.calendar.entities.Notification;
 import ajbc.doodle.calendar.services.EventService;
 
+/**
+ * Responsible for API requests, regarding events.
+ * 
+ * @author Shelly
+ *
+ */
+
 @RequestMapping("/events")
 @RestController
 public class EventController {
@@ -27,12 +34,26 @@ public class EventController {
 	private EventService eventService;
 	
 //get	
+	
+	/**
+	 * This method returns all the events that exist in the DB.
+	 * 
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Event>> getAllEvents() throws DaoException {
 		List<Event> events = eventService.getAllEvents();
 		return ResponseEntity.ok(events);
 	}
 	
+	/**
+	 * This method receives an id of an event and returns the id's event from the DB.  
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/id/{id}")
 	public ResponseEntity<?> getEventById(@PathVariable Integer id) throws DaoException {
 		try {
@@ -43,6 +64,14 @@ public class EventController {
 		}
 	}
 	
+	/**
+	 * This method returns all the events in a given time range.
+	 * 
+	 * @param start
+	 * @param end
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/range")
 	public ResponseEntity<List<Event>> getAllEventsInRange(@RequestParam String start, @RequestParam String end) throws DaoException {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
@@ -52,18 +81,41 @@ public class EventController {
 		return ResponseEntity.ok(events);
 	}
 	
+	/**
+	 * This method returns all the events of a user, given by his id. 
+	 * 
+	 * @param userId
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/of-user/{userId}")
 	public ResponseEntity<List<Event>> getAllEventOfUser(@PathVariable Integer userId) throws DaoException {
 		List<Event> events = eventService.getAllEventsOfUser(userId);
 		return ResponseEntity.ok(events);
 	}
 	
+	/**
+	 * This method returns all the future events of a user, given by his id.
+	 * 
+	 * @param userId
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/upcoming-of-user/{userId}")
 	public ResponseEntity<List<Event>> getAllUpcomingEventOfUser(@PathVariable Integer userId) throws DaoException {
 		List<Event> events = eventService.getAllUpcomingEventsOfUser(userId);
 		return ResponseEntity.ok(events);
 	}
 	
+	/**
+	 * This method returns all the events of a user in a given time range
+	 * 
+	 * @param userId
+	 * @param start
+	 * @param end
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/in-range-of-user/{userId}")
 	public ResponseEntity<List<Event>> getAllEventsOfUserInRange(@PathVariable Integer userId, 
 							@RequestParam String start, @RequestParam String end) throws DaoException {
@@ -74,6 +126,17 @@ public class EventController {
 		return ResponseEntity.ok(events);
 	}
 	
+	/**
+	 * This method returns all the future events of a user which are scheduled before a given time, given by hours and minutes from the 
+	 * time in which the function was called.
+	 * 
+	 * 
+	 * @param userId
+	 * @param hours
+	 * @param minutes
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/next-hours-minutes-of-user/{userId}/{hours}/{minutes}")
 	public ResponseEntity<List<Event>> getAllEventsOfUserInNextHoursMinutes(@PathVariable Integer userId, 
 			@PathVariable int hours, @PathVariable int minutes) throws DaoException {
@@ -83,6 +146,14 @@ public class EventController {
 
 
 //add
+	
+	/**
+	 * Creates a new user and adds it to the DB
+	 * 
+	 * @param userId
+	 * @param event
+	 * @return
+	 */
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<?> addEvent(@RequestParam int userId, @RequestBody Event event) {
 		try {
@@ -95,6 +166,16 @@ public class EventController {
 	}
 	
 //update
+	
+	/**
+	 * update the data of an existing user 
+	 * 
+	 * @param event
+	 * @param eventId
+	 * @param ownerId
+	 * @return
+	 * @throws DaoException
+	 */
 	public ResponseEntity<?> updateEvent(@RequestBody Event event, @PathVariable Integer eventId,
 			@PathVariable Integer ownerId) throws DaoException{
 		eventService.updateEvent(event, eventId, ownerId);
@@ -105,6 +186,13 @@ public class EventController {
 	
 //delete
 	
+	/**
+	 * deletes a user from the DB
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/hard/{id}")
 	public ResponseEntity<?> hardDeleteEvent(@PathVariable Integer id) throws DaoException {	
 		Event event = eventService.getEventById(id);
@@ -112,6 +200,14 @@ public class EventController {
 		return ResponseEntity.status(HttpStatus.OK).body(event);
 	}
 
+	/**
+	 * 
+	 * mark a user as deleted in the DB 
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/soft/{id}")
 	public ResponseEntity<?> SoftDeleteEvent(@PathVariable Integer id) throws DaoException {	
 		Event event = eventService.getEventById(id);
@@ -119,10 +215,4 @@ public class EventController {
 		event = eventService.getEventById(id);
 		return ResponseEntity.ok(event);
 	}
-
-	
-
-	
-	
-
 }

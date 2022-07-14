@@ -37,7 +37,13 @@ import ajbc.doodle.calendar.services.CryptoService;
 import ajbc.doodle.calendar.services.MessagePushService;
 import ajbc.doodle.calendar.services.UserService;
 
-
+/**
+ * Responsible for API requests, regarding users.
+ * 
+ * 
+ * @author Shelly
+ *
+ */
 
 @RestController
 @RequestMapping("/users")
@@ -47,6 +53,12 @@ public class UserController {
 	private UserService userService;
 
 //add
+	
+	/** This method adds a new user to the DB, by receiving a user object. 
+	 * 
+	 * @param user
+	 * @return
+	 */
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<?> addUser(@RequestBody User user) {
 		try {
@@ -59,6 +71,12 @@ public class UserController {
 	}
 	
 //get
+	
+	/**This method returns all the users that exist in the DB.  
+	 * 
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<User>> getAllUsers() throws DaoException {
 		List<User> users = userService.getAllUsers();
@@ -67,6 +85,13 @@ public class UserController {
 		return ResponseEntity.ok(users);
 	}
 	
+	/**
+	 * This method receives an id of a user and returns the user from the DB who has this id. 
+	 * 
+	 * @param id 
+	 * @return the user with this id
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/id/{id}")
 	public ResponseEntity<?> getUserById(@PathVariable Integer id) throws DaoException {
 		try {
@@ -77,6 +102,13 @@ public class UserController {
 		}
 	}
 	
+	/**
+	 * This method receives an email address of a user and returns the user from the DB who has this email address. 
+	 * 
+	 * @param email
+	 * @return the user with this email 
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.GET, path = "/email/{email}")
 	public ResponseEntity<?> getUserByEmail(@PathVariable String email) throws DaoException {
 		try {
@@ -88,6 +120,14 @@ public class UserController {
 	}
 	
 //update
+	
+	/**
+	 * This method takes an updated user object and update the user in the DB, by his id, given as parameter.  
+	 * 
+	 * @param user - updated user 
+	 * @param id - the user'd ID from the DB 
+	 * @return
+	 */
 	@RequestMapping(method = RequestMethod.PUT, path = "/{id}")
 	public ResponseEntity<?> updateUser(@RequestBody User user, @PathVariable Integer id) {
 		try {
@@ -101,6 +141,14 @@ public class UserController {
 	}
 	
 //delete
+	
+	/**
+	 * This method deletes a user, given by his id, from the DB
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/hard/{id}")
 	public ResponseEntity<?> hardDeleteUser(@PathVariable Integer id) throws DaoException {	
 		User user = userService.getUserById(id);
@@ -108,6 +156,13 @@ public class UserController {
 		return ResponseEntity.status(HttpStatus.OK).body(user);
 	}
 	
+	/**
+	 * This method marks a user, given by his id,  as deleted. 
+	 * 
+	 * @param id
+	 * @return
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.DELETE, path = "/delete/soft/{id}")
 	public ResponseEntity<?> SoftDeleteUser(@PathVariable Integer id) throws DaoException {	
 		User user = userService.getUserById(id);
@@ -117,6 +172,23 @@ public class UserController {
 
 	
 //login
+	
+	/**
+	 * This method is updating the user information in the DB, by marking it as logged in.  
+	 * 
+	 * @param subscription
+	 * @param email - user's input, used to update his data in the DB.
+	 * @return
+	 * @throws DaoException
+	 * @throws InvalidKeyException
+	 * @throws JsonProcessingException
+	 * @throws NoSuchAlgorithmException
+	 * @throws InvalidKeySpecException
+	 * @throws InvalidAlgorithmParameterException
+	 * @throws NoSuchPaddingException
+	 * @throws IllegalBlockSizeException
+	 * @throws BadPaddingException
+	 */
 	@RequestMapping(method = RequestMethod.POST, path = "/login/{email}")
 	public ResponseEntity<?> login(@RequestBody Subscription subscription, @PathVariable(required = false) String email) throws DaoException, InvalidKeyException, JsonProcessingException, NoSuchAlgorithmException, InvalidKeySpecException, InvalidAlgorithmParameterException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException {
 		try {
@@ -128,6 +200,13 @@ public class UserController {
 		}
 	}
 	
+	/**
+	 * This method is updating the user information in the DB, by marking it as logged out.  
+	 * 
+	 * @param email - user's input, used to update his data in the DB. 
+	 * @return  
+	 * @throws DaoException
+	 */
 	@RequestMapping(method = RequestMethod.POST, path = "/logout/{email}")
 	public ResponseEntity<?> logout(@PathVariable(required = false) String email) throws DaoException {
 		try {
@@ -139,6 +218,13 @@ public class UserController {
 		}
 	}
 	
+	/** 
+	 * This method checks if a user exist in the DB.
+	 * 
+	 * @param subscription - contains the information of a user's connection, which is described as endpoint. 
+	 * @return true if the user exists in the DB, false if it doesn't. 
+	 * @throws DaoException
+	 */
 	@PostMapping("/isSubscribed")
 	public boolean isSubscribed(@RequestBody SubscriptionEndpoint subscription) throws DaoException {
 		List<User> users = userService.getAllUsers();
