@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{UserDao.java[UserDao" modifiers="513" timestamp="1657194404522"/>
-    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{NotificationDao.java[NotificationDao" modifiers="513" timestamp="1657106310607"/>
+    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{UserDao.java[UserDao" modifiers="513" timestamp="1657712461894"/>
+    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{NotificationDao.java[NotificationDao" modifiers="513" timestamp="1657711478682"/>
     <typeInfo handle="=calendar/C:\/Program Files\/Java\/jdk-18\/lib\/jrt-fs.jar`java.xml=/maven.pomderived=/true=/&lt;org.w3c.dom(Notation.class[Notation" modifiers="1537" timestamp="1648975530791"/>
-    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{EventDao.java[EventDao" modifiers="513" timestamp="1657348544636"/>
-    <typeInfo handle="=calendar/C:\/Users\/foran\/.m2\/repository\/org\/hibernate\/hibernate-core\/5.6.9.Final\/hibernate-core-5.6.9.Final.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate=/=/maven.artifactId=/hibernate-core=/=/maven.version=/5.6.9.Final=/=/maven.scope=/compile=/&lt;org.hibernate.event.service.spi(EventActionWithParameter.class[EventActionWithParameter" modifiers="1537" timestamp="1656832136619"/>
+    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{EventDao.java[EventDao" modifiers="513" timestamp="1657375371801"/>
+    <typeInfo handle="=calendar/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajbc.doodle.calendar.daos{UserEventDao.java[UserEventDao" modifiers="513" timestamp="1657712559427"/>
+    <typeInfo handle="=calendar/C:\/Program Files\/Java\/jdk-18\/lib\/jrt-fs.jar`java.xml=/maven.pomderived=/true=/&lt;org.w3c.dom(UserDataHandler.class[UserDataHandler" modifiers="1537" timestamp="1648975530791"/>
+    <typeInfo handle="=calendar/C:\/Users\/foran\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/9.0.64\/tomcat-embed-core-9.0.64.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.apache.tomcat.embed=/=/maven.artifactId=/tomcat-embed-core=/=/maven.version=/9.0.64=/=/maven.scope=/compile=/&lt;org.apache.catalina.startup(UserDatabase.class[UserDatabase" modifiers="1537" timestamp="1656829316645"/>
 </typeInfoHistroy>

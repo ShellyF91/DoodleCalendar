@@ -62,10 +62,8 @@ public class NotificationManager {
 
 	private void removeHandledOrSoftDeletedNotificationsFromList() {
 		for(int i = 0; i < notificationsList.size(); i++) {
-			System.out.println(notificationsList.get(i).isHandled());
 			if(notificationsList.get(i).isHandled() || notificationsList.get(i).isDeleted())
 				notificationsList.remove(i);
-			System.out.println(notificationsList.size());
 		}
 	}
 
@@ -86,8 +84,8 @@ public class NotificationManager {
 				System.out.println(notificationsQueue.size());
 				firstInLineNotification = notificationsQueue.poll();
 				long timeToSleep = ChronoUnit.SECONDS.between(LocalDateTime.now(), firstInLineNotification.getTimeOfNotification());
-				System.out.println("time to sleep: " + timeToSleep + "seconds, " + timeToSleep/60 + " minutes, " + 
-									timeToSleep/60/60 + " hours.");
+				System.out.println("time to sleep: " + timeToSleep%60 + "seconds, " + timeToSleep%3600/60  + " minutes, " + 
+									timeToSleep/3600 + " hours.");
 				//if the notification time has passed and it still wasn't handle -> sleep for one second
 				if(timeToSleep < 0)
 					timeToSleep = 1;

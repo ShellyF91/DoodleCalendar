@@ -1,7 +1,9 @@
 package ajbc.doodle.calendar.services;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -10,8 +12,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import ajbc.doodle.calendar.daos.DaoException;
 import ajbc.doodle.calendar.daos.HTEventDao;
+import ajbc.doodle.calendar.daos.HTNotificationDao;
 import ajbc.doodle.calendar.daos.HTUserDao;
 import ajbc.doodle.calendar.entities.Event;
+import ajbc.doodle.calendar.entities.Notification;
 import ajbc.doodle.calendar.entities.User;
 
 @Service
@@ -21,9 +25,18 @@ public class EventService {
 	@Autowired
 	HTEventDao eventDao;
 	
+	@Autowired
+	HTNotificationDao notificationDao;
+	
 //add 	
 	public void addEvent(Event event) throws DaoException{
 		eventDao.addEvent(event);
+//		Event lastEvent = eventDao.getLastEvent();
+//		Set<Notification> notifications =  new HashSet<>();
+//		notifications.add(new Notification(event, event.getOwner(),event.getStartTime(), "reminder: the event " + event.getTitle() + " is starting now."));
+//		lastEvent.setNotifications(notifications);
+//		updateEvent(lastEvent);
+//		notificationDao.addNotification(new Notification(event, event.getOwner(),event.getStartTime(), "reminder: the event " + event.getTitle() + " is starting now."));
 	}
 	
 	public void addEventsList(List<Event> events) throws DaoException {

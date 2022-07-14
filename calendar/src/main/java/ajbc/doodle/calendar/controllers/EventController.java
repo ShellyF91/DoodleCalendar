@@ -30,16 +30,7 @@ public class EventController {
 		return ResponseEntity.ok(events);
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, path = "/userId/{id}")
-	public ResponseEntity<?> getAllEventsOfUser(@PathVariable Integer id) throws DaoException {
-		try {
-			List<Event> events = eventService.getAllEventsOfUser(id);
-			return ResponseEntity.ok(events);
-		} catch (DaoException e) {
-			return ResponseEntity.status(HttpStatus.valueOf(500)).body(e.getMessage());
-		}
-	}
-	
+
 //add
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<?> addEvent(@RequestBody Event event) {

@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -183,7 +184,7 @@ public class NotificationController {
 	 * 
 	 * @throws DaoException
 	 */
-	@PostConstruct
+	@Scheduled(initialDelay = 5_000, fixedDelay = 1000_000)
 	public void activateNotificationSending() throws DaoException {
 		notificationManager.start(notificationService.getAllNotifications());
 	}

@@ -16,6 +16,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import ajbc.doodle.calendar.entities.Event;
+import ajbc.doodle.calendar.entities.Notification;
 import ajbc.doodle.calendar.entities.User;
 
 @SuppressWarnings("unchecked")
@@ -100,6 +101,15 @@ public class HTEventDao implements EventDao {
 		criteria.add(criterion2);
 		List<Event> EventsOfUserInNextHoursMinutes = (List<Event>)template.findByCriteria(criteria);
 		return EventsOfUserInNextHoursMinutes;
+	}
+	
+	@Override
+	public Event getLastEvent() {
+		DetachedCriteria criteria = DetachedCriteria.forClass(Notification.class);
+		Criterion criterion = Restrictions.sqlRestriction("eventId = (select max(eventId) from events)");
+		criteria.add(criterion);
+		List<Event> list = (List<Event>)template.findByCriteria(criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY));
+		return list.get(0);
 	}
 	
 	
