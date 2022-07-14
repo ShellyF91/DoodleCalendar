@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import ajbc.doodle.calendar.daos.DaoException;
 import ajbc.doodle.calendar.daos.HTEventDao;
@@ -28,8 +29,13 @@ public class EventService {
 	@Autowired
 	HTNotificationDao notificationDao;
 	
+	@Autowired
+	HTUserDao userDao;
+	
+	
 //add 	
-	public void addEvent(Event event) throws DaoException{
+	public void addEvent(Integer userId, Event event) throws DaoException{
+		event.setOwner(userDao.getUserById(userId));
 		eventDao.addEvent(event);
 //		Event lastEvent = eventDao.getLastEvent();
 //		Set<Notification> notifications =  new HashSet<>();
@@ -37,6 +43,10 @@ public class EventService {
 //		lastEvent.setNotifications(notifications);
 //		updateEvent(lastEvent);
 //		notificationDao.addNotification(new Notification(event, event.getOwner(),event.getStartTime(), "reminder: the event " + event.getTitle() + " is starting now."));
+	}
+	
+	public void addEvent(Event event) throws DaoException{
+		eventDao.addEvent(event);
 	}
 	
 	public void addEventsList(List<Event> events) throws DaoException {
@@ -73,7 +83,9 @@ public class EventService {
 	}
 	
 //update 	
-	public void updateEvent(Event event) throws DaoException {
+	public void updateEvent(Event event, Integer eventId, Integer ownerId) throws DaoException {
+		event.setEventId(eventId);
+		event.setOwnerUserId(ownerId);
 		eventDao.updateEvent(event);
 	}
 	

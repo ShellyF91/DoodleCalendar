@@ -46,6 +46,7 @@ public class NotificationController {
 	private NotificationManager notificationManager;
 	
 //get
+	
 	/**
 	 * 
 	 * @return
@@ -94,6 +95,7 @@ public class NotificationController {
 	
 	
 //add
+	
 	/**
 	 * 
 	 * @param userId
@@ -134,6 +136,7 @@ public class NotificationController {
 	}
 	
 //delete 
+	
 	/**
 	 * 
 	 * @param id
@@ -165,7 +168,14 @@ public class NotificationController {
 	 * 
 	 * @return
 	 */
+	
+	
 //push controller methods
+	
+	/**
+	 * 
+	 * @return
+	 */
 	@GetMapping(path = "/publicSigningKey", produces = "application/octet-stream")
 	public byte[] publicSigningKey() {
 		return messagePushService.getServerKeys().getPublicKeyUncompressed();

@@ -40,7 +40,7 @@ public class seedDB {
 	public void seedDb(ContextRefreshedEvent event) throws DaoException{
 		seedUsers();
 		seedEvents();
-		seedNotifications();
+//		seedNotifications();
 	}
 	
 	
@@ -86,7 +86,7 @@ public class seedDB {
 	}
 	
 	private void seedNotifications() throws DaoException{
-		
+
 			User user1 = userService.getUserById(9);
 			User user2 = userService.getUserById(10);
 			User user3 = userService.getUserById(11);
@@ -127,6 +127,5 @@ public class seedDB {
 			notificationService.addNotification(user1.getUserId(), event1.getEventId(), n111);
 			notificationService.addNotification(user2.getUserId(), event2.getEventId(), n222);
 			notificationService.addNotification(user3.getUserId(), event3.getEventId(), n333);
-			
 	}
 }
